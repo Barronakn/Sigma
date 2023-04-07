@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+$myColor: #e9784a;
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.navigation {
+  background: url("./bg-1.svg") no-repeat;
+  background-size: cover;
+  margin-top: -220px;
+}
+.navigation .logo a img {
+  max-width: none;
+}
+.navBar {
+  width: 100%;
+  padding-bottom: 25px;
+}
+.navigation .barre {
+  border-left: 1px solid $myColor;
+}
+.navigation .acTive {
+  color: $myColor;
+}
+.navigation a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+.navigation a:hover {
+  color: $myColor;
+}
+.navigation .nav_text {
+  margin: 0 auto;
+  margin-top: 180px;
+}
+.account {
+  background-color: $myColor;
+}
+.account:hover {
+  color: white;
+}
+
+// --------
+
+@media screen and (min-width: 1700px) {
+  .navBar {
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .navBar {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navBar {
+    gap: 200px;
+  }
+
+  .barre,
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .nn {
+    display: none;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu,
+  .delete {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav_text h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .nav_text a {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .nav_text {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .navigation .nav_text {
+    padding-top: 300px;
+  }
+}

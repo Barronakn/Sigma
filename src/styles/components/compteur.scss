@@ -1,0 +1,22 @@
+.compteur .compte {
+  background: #fee4da;
+  width: 250px;
+  height: 125px;
+}
+
+// -------
+
+@media screen and (max-width: 1080px) {
+  .compteur {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .compteur {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

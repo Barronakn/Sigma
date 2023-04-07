@@ -1,0 +1,43 @@
+.unique {
+  color: $myColor;
+}
+
+.unique:hover {
+  color: black;
+}
+
+.gray:hover {
+  color: $myColor;
+}
+
+// ----------------
+
+@media screen and (max-width: 1224px) {
+  .footerTop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footerTop .text-lg {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .tel img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tel a {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,62 @@
+.testimonials {
+  background-color: #fcf5f1;
+}
+.author {
+  color: $myColor;
+}
+.testimonials .images {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-auto-rows: 100px;
+  margin: auto 33%;
+  margin-top: 40px;
+}
+
+.testimonials .images img {
+  align-self: center;
+  justify-self: center;
+}
+
+.slide {
+  transition: 2s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .slide h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .testimonials {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .slide h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .quote {
+    width: 40px;
+    height: 40px;
+  }
+
+  .controls .arrow {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slide h1 {
+    font-size: 18px;
+  }
+  .slide h2 {
+    font-size: 17px;
+  }
+  .slide p {
+    font-size: 16px;
+  }
+}

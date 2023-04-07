@@ -1,0 +1,13 @@
+@media screen and (max-width: 984px) {
+  .features {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .features {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

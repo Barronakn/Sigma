@@ -1,0 +1,28 @@
+.feature {
+  background: url("./bg-3.svg");
+}
+
+// ---------
+
+@media screen and (max-width: 1024px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature .left,
+  .feature .right {
+    width: 100%;
+  }
+
+  .feature .right .gap-8 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+}
