@@ -79,6 +79,10 @@ $myColor: #e9784a;
     display: none;
   }
 
+  .nav {
+    display: none;
+  }
+
   .nav ul {
     flex-direction: column;
     position: absolute;
@@ -101,6 +105,14 @@ $myColor: #e9784a;
   }
 }
 
+@media screen and (max-width: 659px) {
+  .navBar {
+    padding-left: 25px;
+    padding-right: 25px;
+    gap: 100px;
+  }
+}
+
 @media screen and (max-width: 448px) {
   .nav_text a {
     font-size: 20px;
@@ -116,5 +128,12 @@ $myColor: #e9784a;
 
   .navigation .nav_text {
     padding-top: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navBar .logo img {
+    width: 100px;
+    height: 30px;
   }
 }

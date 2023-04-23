@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <>
-      <div className="features relative py-28 flex px-32 gap-10">
+      <div className="features bg-black z-0 relative py-28 flex px-32 gap-10">
         <div className="cursor-pointer">
           <img src="" alt="" />
           <h1 className="text-2xl font-bold">Impressive Design</h1>
@@ -28,6 +28,7 @@ const Features = () => {
         </div>
       </div>
       <svg
+        className="z-0"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="192"

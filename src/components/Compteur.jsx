@@ -28,7 +28,7 @@ const Compteur = () => {
   }, []);
   return (
     <>
-      <div className="compteur flex justify-center items-center mx-32 pt-44 gap-5">
+      <div className="compteur z-0 flex justify-center items-center mx-32 pt-44 gap-5">
         <div className="compte flex gap-5 justify-center items-center text-center">
           <img className="w-16 h-16" src="./project.svg" alt="" />
           <div className="compteur_text">

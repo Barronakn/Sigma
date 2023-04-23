@@ -66,7 +66,7 @@ const Testimonials = () => {
   };
   return (
     <>
-      <div className="testimonials py-32 px-28">
+      <div className="testimonials z-0 py-32 px-28">
         <div className="mr-auto ml-auto">
           <img
             className="quote mr-auto ml-auto"
@@ -108,18 +108,11 @@ const Testimonials = () => {
                 alt="ArrowRight"
               />
             </div>
-            {/* <div className="images">
-              <img src="./avatar-1.png" alt="" />
-              <img src="./avatar-2.png" alt="" />
-              <img src="./avatar-3.png" alt="" />
-              <img src="./avatar-4.png" alt="" />
-              <img src="./avatar-5.png" alt="" />
-              <img src="./avatar-3.png" alt="" />
-            </div> */}
           </>
         )}
       </div>
       <svg
+        className="z-0"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="192"

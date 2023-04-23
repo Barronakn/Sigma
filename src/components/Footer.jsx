@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer py-10">
+    <div className="footer z-0 py-10">
       <div className="footerTop flex justify-between ml-32 mr-52 mb-32">
         <div>
           <img className="w-10 h-10" src="./favicon.png" alt="" />

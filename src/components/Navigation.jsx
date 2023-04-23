@@ -3,18 +3,22 @@ import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const handleClick = () => {
-    const nav = document.querySelector(".nav ul");
+    const ul = document.querySelector(".nav ul");
     const menu = document.querySelector(".menu");
-    nav.classList.add("block");
-    nav.classList.remove("nn");
+    const nav = document.querySelector(".nav");
+    nav.style.display = "block";
+    ul.classList.add("block");
+    ul.classList.remove("nn");
     menu.classList.add("nn");
   };
 
   const handleDelete = () => {
-    const nav = document.querySelector(".nav ul");
+    const ul = document.querySelector(".nav ul");
     const menu = document.querySelector(".menu");
+    const nav = document.querySelector(".nav");
     nav.classList.remove("block");
-    nav.classList.add("nn");
+    ul.classList.remove("block");
+    ul.classList.add("nn");
     menu.classList.remove("nn");
   };
 
@@ -39,10 +43,11 @@ const Navigation = () => {
       scrollPosition > 0 ? "2px 3px 1px rgba(140, 140, 140, 0.176)" : "",
     transition: scrollPosition > 0 ? "0.4s ease-out" : "",
     marginTop: scrollPosition > 0 ? "-25px" : "",
+    zIndex: scrollPosition > 0 ? 100 : 10,
   };
 
   return (
-    <div className="navigation">
+    <div className="navigation z-10">
       <div
         style={navBar}
         className="navBar fixed top-0 px-32 items-center flex justify-between"
@@ -150,6 +155,7 @@ const Navigation = () => {
       </div>
       <div className="svg">
         <svg
+          className="z-0"
           xmlns="http://www.w3.org/2000/svg"
           width="100%"
           height="192"

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="contact pt-56">
+    <div className="contact z-0 pt-56">
       <div className="nav_text text-center w-1/2 mr-auto m-auto py-32">
         <h1 className="text-7xl font-bold">Create Wonderful Landing Page</h1>
         <p className="text-gray-500 my-10 text-lg">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   return (
     <>
-      <div className="services flex gap-32 px-32" id="services">
+      <div className="services z-0 flex gap-32 px-32" id="services">
         <div className="left w-1/2 mt-10">
           <h1 className="text-4xl font-bold">
             Making You Explore The Hidden Features
@@ -63,6 +63,7 @@ const Services = () => {
         </div>
       </div>
       <svg
+        className="z-0"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="192"

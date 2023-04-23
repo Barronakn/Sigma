@@ -1,7 +1,7 @@
 const Feature = () => {
   return (
     <>
-      <div className="feature flex px-32 gap-32 py-32">
+      <div className="feature z-0 flex px-32 gap-32 py-32">
         <div className="left w-1/2">
           <img src="./illustration-2.png" alt="" />
         </div>
@@ -13,10 +13,7 @@ const Feature = () => {
             This should be used to tell a story and let your users know more
             about your service. How can you benefit them?
           </p>
-          <div className="flex gap-8 w-1/2 ml-auto mr-auto mt-20">
-            <div>
-              <img src="" alt="" />
-            </div>
+          <div className="w-1/2 mt-20">
             <div>
               <h1 className="text-2xl font-bold">Market Research</h1>
               <p className="text-md mt-3 text-gray-500">
@@ -25,10 +22,7 @@ const Feature = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-8 w-1/2 ml-auto mr-auto">
-            <div>
-              <img src="" alt="" />
-            </div>
+          <div className="w-1/2">
             <div className="mt-8">
               <h1 className="text-2xl font-bold">Creative Ideas</h1>
               <p className="text-md mt-3 text-gray-500">
@@ -40,6 +34,7 @@ const Feature = () => {
         </div>
       </div>
       <svg
+        className="z-0"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="192"
