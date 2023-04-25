@@ -53,7 +53,7 @@ const Navigation = () => {
         className="navBar fixed top-0 px-32 items-center flex justify-between"
       >
         <div className="logo mt-12">
-          <NavLink to="/">
+          <NavLink to="/Sigma">
             <img src="./logo-light.png" alt="LeSigma" />
           </NavLink>
         </div>
